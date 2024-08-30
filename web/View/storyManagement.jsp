@@ -103,8 +103,9 @@
         <button onclick="location.href='NewStory'">Create</button>
         <button onclick="location.href='Main'">Main page</button>
         <form action="Logout" method="post">
-            <input type="submit" value="Logout">
+            <button type="submit" class="logout-button">Logout</button>
         </form>
+
 <!--        <button onclick="location.href='SessionDetail'">Log</button>-->
         
     </body>

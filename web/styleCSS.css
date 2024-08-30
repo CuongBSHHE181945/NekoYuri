@@ -1,27 +1,118 @@
+/* Reset default margin and padding */
 body, html {
-  height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/*.bg {
-   The image used 
-  background-image: url("Image/Scenery.jpg");
+/* Basic styling for buttons */
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+}
 
-   Full height 
-  height: 100%;
-  opacity: 50%;
+button:hover {
+    background-color: #0056b3;
+}
 
-   Center and scale the image nicely 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+/* Form styles */
+form {
+    margin-bottom: 16px;
+}
 
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Table styles */
 table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        table, th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Alert message */
+.alert {
+    padding: 8px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 16px;
+}
+
+/* Link style */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logout button style */
+.logout-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #dc3545; /* Red color for logout */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+
+/* Input field styles */
+.form-container input[type=text], 
+.form-container input[type=password] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Submit button styles */
+.form-container input[type=submit], 
+.form-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type=submit]:hover, 
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
